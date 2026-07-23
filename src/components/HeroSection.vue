@@ -1,7 +1,22 @@
+<script setup>
+import { onMounted, useTemplateRef } from 'vue'
+
+const videoRef = useTemplateRef('videoRef')
+
+onMounted(() => {
+  if (videoRef.value) {
+    videoRef.value.muted = true
+    videoRef.value.play().catch(() => {
+    })
+  }
+})
+</script>
+
 <template>
   <section class="relative w-full h-screen overflow-hidden">
     <!-- Background video -->
     <video
+      ref="videoRef"
       autoplay
       muted
       loop
