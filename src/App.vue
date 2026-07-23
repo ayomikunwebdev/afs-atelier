@@ -11,6 +11,7 @@ import TheFooter from './components/TheFooter.vue'
 
 <template>
   <TheHeader />
+  <div class="pt-[72px]">
   <HeroSection />
   <BrandStory />
   <ServicesSection />
@@ -18,4 +19,5 @@ import TheFooter from './components/TheFooter.vue'
   <AtelierProcess />
   <BookingSection />
   <TheFooter />
+  </div>
 </template>

@@ -6,7 +6,7 @@ const menuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-black text-white px-6 py-4 relative">
+<header class="bg-black text-white px-6 py-4 fixed top-0 left-0 w-full z-50">
     <div class="flex items-center justify-between">
       <!-- Left: Brand logo -->
       <div class="leading-tight">
